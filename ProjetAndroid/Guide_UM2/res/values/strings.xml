@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Guide_UM2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_map">Map</string>
+	<string name="apikey">0tf_KpqtO5QM5B4Nd1Fej6bYRObL-lgji0WweOA</string>
+	<string name="lbListaVacia"> Aucun batiment trouvé </string>
+	
+</resources>

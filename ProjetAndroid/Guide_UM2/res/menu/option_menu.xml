@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Single menu item
+         Set id, icon and Title for each menu item
+    -->
+    
+    <item android:id="@+id/macceuil"
+          android:icon="@drawable/home"
+          android:title="Acceuil" />
+    
+    <item android:id="@+id/mbatiment"
+          android:title="Batiment proche" />
+ 
+    <item android:id="@+id/mchemin"
+          android:title="Trouvez un chemin" />
+ 
+    <item android:id="@+id/mrecherche"
+          android:title="Recherche par mot clés" />
+ 
+    <item android:id="@+id/mliste"
+          android:title="Liste des batiment" />
+ 
+    <item android:id="@+id/mquitter"
+          android:title="Quitter" 
+          android:icon="@drawable/fermer"
+          android:showAsAction="always" />  
+ 
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:paddingLeft="20px" 
+    android:paddingTop="5px"
+    android:background="@drawable/bb"
+    >
+    <TextView 
+    	android:text="Bienvenue au guide de l'université" 
+    	android:id="@+id/textLogin" 
+    	android:textStyle="bold"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:layout_gravity="center_horizontal"
+    	android:textColor="#FFFFFF"
+    	android:textSize="18dp"
+    	android:paddingLeft="5dp" 
+    	android:paddingTop="20dp">
+    </TextView>
+
+    <TextView 
+    	android:text="Montpellier 2" 
+    	android:id="@+id/te" 
+    	android:textStyle="bold"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:layout_gravity="center_horizontal"
+    	android:textColor="#FFFFFF"
+    	android:textSize="18dp"
+    	android:paddingLeft="5dp" 
+    	>
+    </TextView>
+    
+    <ImageView android:id="@+id/mm"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+    	android:layout_height="105dp"
+    	android:paddingTop="40dp"
+        />
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" >
+    
+    	<Button 
+    		android:text="Batiment proche" 
+    		android:layout_width="150dp" 
+    		android:layout_height="wrap_content" 
+    		android:layout_marginTop="30dp" 
+    		android:onClick="onClickBatiment" 
+    		android:id="@+id/batiment">
+    	</Button>
+    	
+    	<Button  
+    		android:layout_marginRight="10dp"
+    		android:text="Recherche par mot clés" 
+    		android:layout_width="150dp" 
+    		android:layout_height="wrap_content" 
+    		android:layout_marginTop="30dp" 
+    		android:onClick="onClickRecherche" 
+    		android:id="@+id/recherche">
+    	</Button>
+
+	</LinearLayout>
+	    
+        <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:paddingTop="20dp"
+    	>
+    
+    	<Button 
+    		android:onClick="onClickChemin" 
+    		android:text="Trouvez un chemin" 
+    		android:layout_width="150dp" 
+    		android:layout_height="wrap_content" 
+    		android:id="@+id/chemin">
+    	</Button>
+    	
+    	<Button  
+    		android:layout_marginRight="10dp"
+    		android:text="Liste des batiment" 
+    		android:layout_width="150dp" 
+    		android:layout_height="wrap_content" 
+    		android:onClick="onClickListe" 
+    		android:id="@+id/liste">
+    	</Button>
+
+	</LinearLayout>
+
+    	<Button  
+    		android:layout_marginRight="10dp"
+    		android:text="Les 5 dernières recherches" 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:layout_gravity="center_horizontal"
+    		android:onClick="onClick" 
+    		android:id="@+id/aide">
+    	</Button>        
+        
+</LinearLayout>

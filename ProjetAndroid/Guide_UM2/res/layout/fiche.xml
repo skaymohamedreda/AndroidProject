@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:paddingLeft="20px" 
+    android:paddingTop="5px">
+    
+ <!-- scrolleview doit contenir un seul element  -->
+        <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="120px">
+ 
+    <ImageView
+		android:id="@+id/img"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	   	android:layout_gravity="center_vertical"
+	   	android:padding="2px"
+		/>
+ 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	   	android:layout_gravity="center_vertical"
+	   	android:paddingLeft="10px"
+	    android:layout_weight="1"
+	    >
+ 
+	    <TextView android:id="@+id/nom"
+	         android:textColor="#FFFFFF"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:textSize="24px"
+	         android:textStyle="bold"
+	         />
+ 
+	    <TextView android:id="@+id/idbat"
+	         android:textColor="#FFFFFF"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:textSize="20px"
+	         />
+	         
+ 
+    </LinearLayout>
+	    
+</LinearLayout>
+
+    
+		<TextView
+        	android:id="@+id/description1"
+        	android:textColor="#C82F6C"
+        	android:text="Description : "
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:inputType="text"
+        	android:paddingLeft="40px"
+        	android:paddingTop="10px"
+        	android:textSize="18px" 
+        	android:textStyle="bold"/>
+		
+		<TextView
+        	android:id="@+id/description"
+        	android:textColor="#FFFFFF"
+        	android:paddingLeft="50px"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:maxLines="30"
+        	android:textSize="17px" />
+		
+		
+    	<Button 
+    		android:layout_marginLeft="100px" 
+    		android:text="Voir sur Map" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:layout_marginTop="40px"
+    		android:onClick="onClick" 
+    		android:id="@+id/voirMap">
+    	</Button>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
